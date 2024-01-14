@@ -8,7 +8,7 @@ from flask import jsonify
 
 from pymongo import MongoClient
 
-
+# we have stored our model in lin_reg.bin and for the prediction we are using it 
 MODEL_FILE = os.getenv('MODEL_FILE', 'lin_reg.bin')
 
 EVIDENTLY_SERVICE_ADDRESS = os.getenv('EVIDENTLY_SERVICE', 'http://127.0.0.1:5000')
